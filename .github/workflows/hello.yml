@@ -1,0 +1,9 @@
+name: action journey
+on:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greet
+        run: echo "hello"
