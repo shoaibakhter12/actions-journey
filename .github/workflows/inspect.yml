@@ -1,0 +1,17 @@
+name: inspect
+on:
+  push:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: print kernel detail
+        run: |
+             uname -a
+             ls 
+      - name: how many
+        run: ls | wc -l 
+
+
